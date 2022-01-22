@@ -17,8 +17,15 @@ submitEl.onclick = function(evt){
     const numberOfDay = document.getElementById("numberOfDay").value;
     const salary = numberOfDay * luong;
     console.log("tiền lương là:", salary);
-    alert("tiền lương là:" + salary);
 
+    // alert("tiền lương là:" + salary);
+
+    const wrapper1El= document.getElementById("wrapper1");
+    const salaryEl = document.getElementById("OfNumber1");
+    console.log("salaryEl",salaryEl);
+
+    wrapper1El.style.display = "block";
+    salaryEl.innerHTML = salary.toLocaleString()+VND;
 };
 
 //   bt2:
@@ -41,7 +48,13 @@ submit2El.onclick = function(evt){
     const fifth = +document.getElementById("fifth").value;
     const average = (first + second + third + four + fifth ) / 5;
 
-    alert("trung bình 5 só là:" + average);
+    // alert("trung bình 5 só là:" + average);
+    const wrapper2El= document.getElementById("wrapper2");
+    const averageEl = document.getElementById("OfNumber2");
+    console.log("averageEl",averageEl);
+
+    wrapper2El.style.display = "block";
+    averageEl.innerHTML = average;
   
 };
 
@@ -60,7 +73,13 @@ const submit3El = document.getElementById("submit3");
 submit3El.onclick = function(evt){
     const numberOfMoney = +document.getElementById("numberOfMoney").value;
     const exchange = numberOfMoney * VND;
-     alert("tiền quy đổi thành VND là:" + exchange + " " +"VND");
+    //  alert("tiền quy đổi thành VND là:" + exchange + " " +"VND");
+    const wrapper3El= document.getElementById("wrapper3");
+    const exchangeEl = document.getElementById("OfNumber3");
+    console.log("exchangeEl",exchangeEl);
+
+    wrapper3El.style.display = "block";
+    exchangeEl.innerHTML = exchange.toLocaleString()+"VND";
 };
 
 // bt4
@@ -77,7 +96,16 @@ submit4.onclick =  function(evt){
     const rong = +document.getElementById("chieuRong").value;
     const chuVi = (dai + rong) * 2 ;
     const dienTich = dai * rong ;
-    alert("chu vi là:" + " "+ chuVi +" "+"-"+" "+"diện tích là:"+" "+ dienTich ); 
+    //  alert("chu vi là:" + " "+ chuVi +" "+"-"+" "+"diện tích là:"+" "+ dienTich ); 
+    const wrapper4El= document.getElementById("wrapper4");
+    const chuViEl = document.getElementById("OfNumber4");
+    const dienTichEl = document.getElementById("OfNumber5");
+    console.log("chuViEl",chuViEl);
+    console.log("dienTichEl",dienTichEl);
+    wrapper4El.style.display = "block";
+    chuViEl.innerHTML = chuVi;
+    dienTichEl.innerHTML = dienTich;
+     
 };
 
 // bt5
@@ -95,7 +123,14 @@ submit5.onclick = function(evt){
     const numBer = +document.getElementById("numBer").value;
     const so_hang_dv = numBer % 10; 
     const so_hang_chuc = numBer / 10; 
-    const Results = so_hang_dv + so_hang_chuc ;
+    const result = so_hang_dv + so_hang_chuc ;
     // const Results = num.toFixed(TongSo);
-    alert("tổng 2 ký số là:" + " "+ Math.floor(Results) ); 
+    // alert("tổng 2 ký số là:" + " "+ Math.floor(Results) ); 
+    const wrapperEl= document.getElementById("wrapper");
+    const resultEl = document.getElementById("OfNumber");
+    console.log("resultEl",resultEl);
+
+    wrapperEl.style.display = "block";
+    resultEl.innerHTML = Math.floor(result);
+    
 }
