@@ -13,75 +13,123 @@
 
 <body>
     <div class="salary">
-        <h1 class="text-center">Bảng tính tiền lương</H1>
-        <div class="form-group  w-50 mx-auto">
-            <label for="numberOfDay">nhập số ngày</label>
-            <input type="text" id="numberOfDay" class="form-control" />
-        </div>
-        <div class="text-center">
-            <button id="submit" class="btn btn-primary" type="submit">Submit</button>
+
+        <div class="card w-50 mx-auto">
+            <h1 class="text-center card-header">Bảng tính tiền lương</H1>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="numberOfDay">nhập số ngày</label>
+                    <input type="text" id="numberOfDay" class="form-control" />
+                </div>
+                <div class="text-center">
+                    <button id="submit" class="btn btn-primary" type="submit">Submit</button>
+                </div>
+                <div id="wrapper1" style="display: none" class="text-center">
+                    <h2>tiền lương là</h2>
+                    <p id=OfNumber1>
+                        </p>
+                </div>
+            </div>
         </div>
     </div>
     <br>
     <br>
-    <div class="average  w-50 mx-auto">
-        <h1 class="average_count text-center">Tính trung bình cộng</h1>
-        <div class="form-group">
-            <label for="">Số thứ 1</label>
-            <input type="text" class="form-control" id="first" />
-            <label for="">Số thứ 2</label>
-            <input type="text" class="form-control" id="second" />
-            <label for="">Số thứ 3</label>
-            <input type="text" class="form-control" id="third" />
-            <label for="">Số thứ 4</label>
-            <input type="text" class="form-control" id="four" />
-            <label for="">Số thứ 5</label>
-            <input type="text" class="form-control" id="fifth" />
-        </div>
-        <div class="text-center">
-            <button id="submit2" class="btn btn-primary" type="submit">Submit</button>
+    <div class="average ">
+
+        <div class="card w-50 mx-auto">
+            <h1 class="average_count text-center card-header">Tính trung bình cộng</h1>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="">Số thứ 1</label>
+                    <input type="text" class="form-control" id="first" />
+                    <label for="">Số thứ 2</label>
+                    <input type="text" class="form-control" id="second" />
+                    <label for="">Số thứ 3</label>
+                    <input type="text" class="form-control" id="third" />
+                    <label for="">Số thứ 4</label>
+                    <input type="text" class="form-control" id="four" />
+                    <label for="">Số thứ 5</label>
+                    <input type="text" class="form-control" id="fifth" />
+                </div>
+                <div class="text-center">
+                    <button id="submit2" class="btn btn-primary" type="submit">Submit</button>
+                </div>
+                <div id="wrapper2" style="display: none" class="text-center">
+                    <h2>trung bình là</h2>
+                    <p id=OfNumber2></p>
+                </div>
+            </div>
         </div>
     </div>
     </div>
     <br>
     <br>
     <div class="exchange">
-        <h1 class="text-center">Bảng quy đổi tiền (USD - VND)</H1>
-        <div class="form-group  w-50 mx-auto">
-            <label for="numberOfMoney">Nhập số tiền cần đổi (USD) </label>
-            <input type="text" id="numberOfMoney" class="form-control" />
-        </div>
-        <div class="text-center">
-            <button id="submit3" class="btn btn-primary" type="submit">Submit</button>
+
+        <div class="card w-50 mx-auto">
+            <h1 class="text-center card-header">Bảng quy đổi tiền (USD - VND)</H1>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="numberOfMoney">Nhập số tiền cần đổi (USD) </label>
+                    <input type="text" id="numberOfMoney" class="form-control" />
+                </div>
+                <div class="text-center">
+                    <button id="submit3" class="btn btn-primary" type="submit">Submit</button>
+                </div>
+                <div id="wrapper3" style="display: none" class="text-center">
+                    <h2>số tiền là</h2>
+                    <p id=OfNumber3></p>
+                </div>
+            </div>
         </div>
     </div>
     <br>
     <br>
     <div class="ketQua">
-        <h1 class="text-center">Tính diện tích và chu vi hình chữ nhật</h1>
-        <div class="form-group w-50 mx-auto">
-            <label for="chieDai">chiều dài</label>
-            <input type="text" class="form-control" id="chieuDai" />
-            <label for="chieuRong">chiều rộng</label>
-            <input type="text" class="form-control" id="chieuRong" />
+
+        <div class="card w-50 mx-auto">
+            <h1 class="text-center card-header">Tính diện tích và chu vi hình chữ nhật</h1>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="chieDai">chiều dài</label>
+                    <input type="text" class="form-control" id="chieuDai" />
+                    <label for="chieuRong">chiều rộng</label>
+                    <input type="text" class="form-control" id="chieuRong" />
+                </div>
+                <div class="text-center">
+                    <button id="submit4" class="btn btn-primary" type="submit">submit</button>
+                </div>
+                <div id="wrapper4" style="display: none" class="text-center">
+                    <h2>Chu Vi là</h2>
+                    <p id=OfNumber4></p>
+                    <h2>Diện Tích là</h2>
+                    <p id=OfNumber5></p>
+                </div>
+            </div>
         </div>
-        <div class="text-center">
-            <button id="submit4" class="btn btn-primary" type="submit">submit</button>
+        <br>
+        <br>
+        <div class="Result">
+
+            <div class="card w-50 mx-auto">
+                <h1 class="text-center card-header">tính tổng 2 ký số</h1>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="numBer">Số cần tính</label>
+                        <input type="text" class="form-control" id="numBer" />
+                    </div>
+                    <div class="text-center">
+                        <button id="submit5" class="btn btn-primary" type="submit">submit</button>
+                    </div>
+                    <div id="wrapper" style="display: none" class="text-center">
+                        <h2>Tổng 2 ký số</h2>
+                        <p id=OfNumber>
+                            </pi>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <br>
-    <br>
-    <div class="Result">
-        <h1 class="text-center">tính tổng 2 ký số</h1>
-        <div class="form-group w-50 mx-auto">
-            <label for="numBer">Số cần tính</label>
-            <input type="text" class="form-control" id="numBer" />
-        </div>
-        <div class="text-center">
-            <button id="submit5" class="btn btn-primary" type="submit">submit</button>
-        </div>
-    </div>
-    <script src="./java3.js"></script>
+        <script src="./java3.js"></script>
 </body>
 
 </html>
